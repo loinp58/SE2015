@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QUIZ</title>
+
+    <!-- Bootstrap-->
+    <link href="../libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap Theme-->
+    <link href="../libs/bootstrap/css/bootstrap-theme.css" rel="stylesheet" />
+    
+    <!-- Font-awesome CSS-->
+    <link rel="stylesheet" href="../libs/font-awesome/css/font-awesome.css">
+
+    <!--Bootstrap-social CSS-->
+    <link rel="stylesheet" href="../libs/bootstrap-social/bootstrap-social.css">
+    
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="dist/css/loginStyle.css">
+
+</head>
+<body ng-app="login" ng-controller="loginCtrl">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="panel panel-login">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <a href="#" ng-class="{active:isActive(1)}" ng-click="changeTab(1)">Login</a>
+                            </div>
+                            <div class="col-xs-6">
+                                <a href="#" ng-class="{active:isActive(2)}" ng-click="changeTab(2)">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <form id="login-form" ng-show="currentTab == 1" method="post" stype="display:none;">
+                                    <div class="form-group">
+                                        <input type="text" name="username" id="username" class="form-control" placeholder="Username">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row grid-row">
+                                            <div class="col-sm-4">
+                                                <input type="checkbox" class="" name="remember" id="remember">
+                                                <label for="remember">Remember me</label>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <input type="submit" name="submit" id="submit" class="form-control btn btn-login" value="Log In">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="text-center">
+                                                    <a href="" class="forgot-password">Forget Password?</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="login-or">
+                                        <hr class="hr-or">
+                                        <span class="span-or">or</span>
+                                    </div><!--End login or-->
+                                    <div class="col-lg-4">
+                                        <a class="btn btn-block btn-social btn-facebook">
+                                            <i class="fa fa-facebook"></i> Facebook
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <a class="btn btn-block btn-social btn-google">
+                                            <i class="fa fa-google-plus"></i> Google+
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <a class="btn btn-block btn-social btn-microsoft">
+                                            <i class="fa fa-windows"></i> Microsoft
+                                        </a>
+                                    </div>
+                                </form>
+                                <form id="register-form" ng-show="currentTab == 2" method="post" style="display:block;">
+                                    <div class="form-group">
+                                        <input type="text" name="username" id="username" class="form-control" placeholder="Username">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="email" id="email" class="form-control" placeholder="Email Address">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" name="confirm-password" id="confirm-password" class="form-control" placeholder="Confirm Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-sm-offset-3">
+                                                <input type="submit" name="register-submit" id="register-submit" class="form-control btn btn-register" value="Register Now">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../libs/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap font-awesome -->
+    <script src="../libs/font-awesome/js/font-awesome.min.js"></script>
+
+    <!-- AngularJS -->
+    <script src="../libs/angular/angular.min.js"></script>
+
+    <!--Login Style -->
+    <script src="../dist/js/loginStyle.js"></script>
+
+</body>
+</html>
