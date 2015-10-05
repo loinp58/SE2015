@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>TOPEKA QUIZ</title>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/angular.js"></script>
+        <script src="js/index.js"></script>
+
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+</head>
+<body ng-app="myIndex" ng-controller="ctrlIndex">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">TOPEKA QUIZ</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><p class="navbar-text">Already have an account?</li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sign in <span class="caret"></span></a>
+                        <ul id="login" class="dropdown-menu">
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <form class="form" role="form" method="post" action="login"  id="login-nav">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="username" placeholder="Username" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" id="password" placeholder="Password" required>
+                                                <div class="help-block text-right">
+                                                    <a href="">Forget the password? </a>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox">Remember me
+                                            </div>
+                                            <div class="divider"></div>
+                                            Or login via
+                                            <div class="social-buttons">
+                                                <a href="#" class="btn btn-block btn-social btn-facebook">Facebook</a>
+                                                <a href="#" class="btn btn-block btn-social btn-twitter">Twitter</a>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="divider"></div>
+                            <li class="bottom">
+                                <p>New here? <a href="#"><b class="register">Register now!</b></a></p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="col-lg-9">
+        <div class="container">
+            <div class="col-xs-10">
+                <div class="col-sm-4 item" ng-repeat="item in categories">
+                    <a href="{{item.href}}" class="link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{{item.image}}" class="img-responsive" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <i class="fa fa-trophy fa-2x"></i> Leader Board
+            </div>
+            <!-- /.panel-heading -->
+            <table class="table table-hover">
+                <tbody>
+                    <tr ng-repeat="user in usersLeaderBoard">
+                        <td class="col-lg-2">{{user.rank}}</td>
+                        <td class="col-lg-7"><a href="#" class="name">{{user.Name}}</a></td>
+                        <td class="col-lg-3">{{user.point}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!--
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-md-6">
+                    <p class="footer-text">SE 2015 PROJECT - TOPEKA QUIZ</p>
+                </div>
+                <div class="footer-col col-md-6">
+                    <p class="footer-contact">Contact us on</p>
+                    <ul class="list-inline">
+                        <li>
+                            <a class="btn btn-social-icon btn-facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-social-icon btn-twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-social-icon btn-google">
+                                <i class="fa fa-google"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    -->
+</body>
+</html>
