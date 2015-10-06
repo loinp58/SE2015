@@ -8,9 +8,6 @@
 
     <title>TOPEKA QUIZ</title>
 
-    <!-- font-awesome CSS -->
-    <link rel="stylesheet" href="../libs/font-awesome/css/font-awesome.css">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css"/>
 
@@ -20,6 +17,9 @@
     <!-- Bootstrap Social CSS -->
     <link rel="stylesheet" href="../libs/bootstrap-social/bootstrap-social.css">
 
+    <!-- font-awesome CSS -->
+    <link rel="stylesheet" href="../libs/font-awesome/css/font-awesome.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../dist/css/index_kien.css">
 
@@ -27,9 +27,8 @@
 <body ng-app="myIndex" ng-controller="ctrlIndex">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">QUIZ APP</a>
+                <a class="navbar-brand" href="#">TOPEKA QUIZ</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
@@ -167,6 +166,13 @@
             </div>
             <!-- /.panel-heading -->
             <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
                 <tbody>
                     <tr ng-repeat="user in usersLeaderBoard">
                         <td class="col-lg-2">{{user.rank}}</td>

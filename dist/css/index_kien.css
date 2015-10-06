@@ -4,6 +4,10 @@
     color: #fa8072;
 }
 
+#myNavbar {
+    cursor: pointer;
+}
+
 .name {
     color: #000;
 }
