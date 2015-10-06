@@ -1,3 +1,4 @@
+// AngularJS code in here
 var myindex = angular.module("myIndex", []);
 
 myindex.controller('ctrlIndex', function($scope){
@@ -15,11 +16,45 @@ myindex.controller('ctrlIndex', function($scope){
 	];
 
     $scope.categories = [
-        {href: "", image: "img/portfolio/cabin.png"},
-        {href: "", image: "img/portfolio/cake.png"},
-        {href: "", image: "img/portfolio/circus.png"},
-        {href: "", image: "img/portfolio/game.png"},
-        {href: "", image: "img/portfolio/safe.png"},
-        {href: "", image: "img/portfolio/submarine.png"},
+        {href: "", image: "/dist/img/portfolio/cabin.png"},
+        {href: "", image: "/dist/img/portfolio/cake.png"},
+        {href: "", image: "/dist/img/portfolio/circus.png"},
+        {href: "", image: "/dist/img/portfolio/game.png"},
+        {href: "", image: "/dist/img/portfolio/safe.png"},
+        {href: "", image: "/dist/img/portfolio/submarine.png"},
+        {href: "", image: "/dist/img/portfolio/cabin.png"},
+        {href: "", image: "/dist/img/portfolio/cake.png"},
+        {href: "", image: "/dist/img/portfolio/circus.png"},
+        {href: "", image: "/dist/img/portfolio/game.png"},
+        {href: "", image: "/dist/img/portfolio/safe.png"},
+        {href: "", image: "/dist/img/portfolio/submarine.png"},
     ];
+
+    // Login
+    $scope.currentTab = 1;
+    $scope.changeTab = function(index) {
+        $scope.currentTab = index;
+    };
+    $scope.isActive = function(index) {
+        return (index === $scope.currentTab);
+    };
+});
+
+//jQuery code in here
+
+jQuery(document).ready(function($) {
+	var offset = $("#sidebar").offset();
+	var topPadding = 15;
+
+	$(window).scroll(function() {
+        if ($(window).scrollTop() > offset.top) {
+            $("#sidebar").stop().animate({
+            marginTop: $(window).scrollTop() - offset.top + topPadding
+        });
+        } else {
+            $("#sidebar").stop().animate({
+            	marginTop: 0
+        	});
+    	};
+    });
 });
