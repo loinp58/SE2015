@@ -16,18 +16,18 @@ myindex.controller('ctrlIndex', function($scope){
 	];
 
     $scope.categories = [
-        {href: "", image: "/dist/img/portfolio/cabin.png"},
-        {href: "", image: "/dist/img/portfolio/cake.png"},
-        {href: "", image: "/dist/img/portfolio/circus.png"},
-        {href: "", image: "/dist/img/portfolio/game.png"},
-        {href: "", image: "/dist/img/portfolio/safe.png"},
-        {href: "", image: "/dist/img/portfolio/submarine.png"},
-        {href: "", image: "/dist/img/portfolio/cabin.png"},
-        {href: "", image: "/dist/img/portfolio/cake.png"},
-        {href: "", image: "/dist/img/portfolio/circus.png"},
-        {href: "", image: "/dist/img/portfolio/game.png"},
-        {href: "", image: "/dist/img/portfolio/safe.png"},
-        {href: "", image: "/dist/img/portfolio/submarine.png"},
+        {href: "./quiz_view.html", image: "/dist/img/portfolio/cabin.png"},
+        {href: "./quiz_view.html", image: "/dist/img/portfolio/cake.png"},
+        {href: "./quiz_view.html", image: "/dist/img/portfolio/circus.png"},
+        {href: "./quiz_view.html", image: "/dist/img/portfolio/game.png"},
+        {href: "./quiz_view.html", image: "/dist/img/portfolio/safe.png"},
+        {href: "./quiz_view.html", image: "/dist/img/portfolio/submarine.png"},
+        {href: "./quiz_view.html", image: "/dist/img/portfolio/cabin.png"},
+        {href: "./quiz_view.html", image: "/dist/img/portfolio/cake.png"},
+        {href: "./quiz_view.html", image: "/dist/img/portfolio/circus.png"},
+        {href: "./quiz_view.html", image: "/dist/img/portfolio/game.png"},
+        {href: "./quiz_view.html", image: "/dist/img/portfolio/safe.png"},
+        {href: "./quiz_view.html", image: "/dist/img/portfolio/submarine.png"},
     ];
 
     // Login
