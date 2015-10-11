@@ -42,7 +42,23 @@
             <div class="panel panel-primary">
                 <div class="panel-heading">{{head}}</div>
                 <div class="panel-body">
-                {{choice}}
+                    <form id="choice" method="post">
+                        <div class="row">
+                            <input type="radio" name="A" id="a" class="form-control">
+                            <p>{{choice[0]}}</p>
+                        </div>
+                        <div class="row">
+                            <input type="radio" name="B" id="b" class="form-control">
+                            <label for="B">{{choice[1]}}</label>
+                        </div>
+                        <div class="row">
+                            <input type="radio" name="C" id="c" class="form-control">
+                            <label for="A">{{choice[2]}}</label>
+                        </div>
+                        <div class="row">
+                            <input type="radio" name="D" id="d" class="form-control">
+                            <label for="D">{{choice[3]}}</label>
+                        </div>
                 </div>
             </div>
     </div>
