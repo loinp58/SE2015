@@ -33,16 +33,16 @@
     <script src="../libs/angular/angular.js"></script>
 
     <!-- Custom Script -->
-    <script src="../dist/js/index_kien.js"></script>
+    <script src="../dist/js/quiz_view.js"></script>
 
 </head>
-<body ng-app="quizview" ng-controller="ctrlQuiz">
+<body ng-app="quizView" ng-controller="viewCtrl">
     <div class="container">
-            <h1 class="question-heading">Question </h2>
+            <h1 class="question-heading">Question {{number}}</h2>
             <div class="panel panel-primary">
-                <div class="panel-heading"></div>
+                <div class="panel-heading">{{head}}</div>
                 <div class="panel-body">
-
+                {{choice}}
                 </div>
             </div>
     </div>
