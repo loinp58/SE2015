@@ -38,29 +38,32 @@
 </head>
 <body ng-app="quizView" ng-controller="viewCtrl">
     <div class="container">
-            <h2 class="question-heading">Question {{number}}</h2>
-            <div class="panel panel-primary">
-                <div class="panel-heading">{{head}}</div>
-                <div class="panel-body">
-                    <form id="choice" method="post">
-                        <div class="row">
-                            <input type="radio" name="A" id="a" class="form-control">
-                            <p>{{Q1}}</p>
-                        </div>
-                        <div class="row">
-                            <input type="radio" name="B" id="b" class="form-control">
-                            <label for="B">{{Q2}}</label>
-                        </div>
-                        <div class="row">
-                            <input type="radio" name="C" id="c" class="form-control">
-                            <label for="A">{{Q3}}</label>
-                        </div>
-                        <div class="row">
-                            <input type="radio" name="D" id="d" class="form-control">
-                            <label for="D">{{Q4}}</label>
-                        </div>
-                </div>
+            <h2 class="question-heading">Question 1</h2>
+        <div class="panel">
+            <div class="panel-heading_box">
+                <div class="panel-heading">What does oc cho mean?</div>
             </div>
+            <div class="panel-body">
+                <form id="choice" method="post">
+                    <div class="row">
+                        <p>{{Q1}}</p>
+                        <input type="radio" name="A" id="a" class="form-control">
+                    </div>
+                    <div class="row">
+                        <label for="B">{{Q2}}</label>
+                        <input type="radio" name="B" id="b" class="form-control">
+                    </div>
+                    <div class="row">
+                        <label for="A">{{Q3}}</label>
+                        <input type="radio" name="C" id="c" class="form-control">
+                    </div>
+                    <div class="row">
+                        <label for="D">{{Q4}}</label>
+                        <input type="radio" name="D" id="d" class="form-control">
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>
