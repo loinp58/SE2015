@@ -2,6 +2,9 @@
 var myindex = angular.module("myIndex", []);
 
 myindex.controller('ctrlIndex', function($scope){
+	$scope.username = "Kdz";
+	$scope.loginStatus = false;
+
 	$scope.usersLeaderBoard = [
 		{rank: 1, Name: "Name 1", point: 140},
 		{rank: 2, Name: "Name 2", point: 130},
@@ -38,6 +41,15 @@ myindex.controller('ctrlIndex', function($scope){
     $scope.isActive = function(index) {
         return (index === $scope.currentTab);
     };
+	
+	$scope.getCurrentLoginStatus = function() {
+		return $scope.loginStatus;
+	}
+	
+	$scope.changeLoginStatus = function() {
+		$scope.loginStatus = (($scope.loginStatus == false) ? true : false);
+		return $scope.loginStatus;
+	}
 });
 
 //jQuery code in here

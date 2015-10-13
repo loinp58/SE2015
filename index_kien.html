@@ -9,11 +9,11 @@
     <title>TOPEKA QUIZ</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.css"/>
 
     <!-- Bootstrap theme CSS -->
     <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap-theme.css"/>
-
+	
     <!-- Bootstrap Social CSS -->
     <link rel="stylesheet" href="../libs/bootstrap-social/bootstrap-social.css">
 
@@ -23,9 +23,24 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../dist/css/index_kien.css">
 
+	<!-- JavaScript jQuery -->
+    <script src="../libs/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Script -->
+    <script src="../libs/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Font-awesome Script -->
+    <script src="../libs/font-awesome/js/font-awesome.js"></script>
+
+    <!-- angularJS -->
+    <script src="../libs/angular/angular.js"></script>
+
+    <!-- Custom Script -->
+    <script src="../dist/js/index_kien.js"></script>
+
 </head>
 <body ng-app="myIndex" ng-controller="ctrlIndex">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="#">TOPEKA QUIZ</a>
@@ -33,9 +48,17 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a data-target="#myModal" data-toggle="modal">
+                        <a data-target="#myModal" data-toggle="modal" ng-hide="getCurrentLoginStatus()">
                             <span class="glyphicon glyphicon-log-in"></span> Login<i class="fa fa-minus fa-2x fa-rotate-90"></i><span class="glyphicon glyphicon-user"></span> Sign Up
                         </a>
+                        <span class ="welcome-back" ng-show="getCurrentLoginStatus()">Welcome back, 
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">{{username}} <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Your profile</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">Sign out</a></li>
+                            </ul>
+                        </span>
                     </li>
                 </ul>
             </div>
@@ -74,7 +97,7 @@
                                             <input type="checkbox" class="" name="remember" id="remember">
                                             <label for="remember">Remember me</label>
                                         </div>
-                                        <div class="col-sm-8">
+                                        <div class="col-sm-8" ng-click="changeLoginStatus()">
                                                 <input type="submit" name="submit" id="submit" class="form-control btn btn-login" value="Log In">
                                         </div>
                                     </div>
@@ -109,7 +132,7 @@
                                 </div>
                             </form>
                             <!-- End Login-form -->
-                            
+
                             <!-- Register form -->
                             <form id="register-form" ng-show="currentTab == 2" method="post" style="display:block;">
                                 <div class="form-group">
@@ -183,21 +206,6 @@
             </table>
         </div>
     </div>
-
-    <!-- JavaScript jQuery -->
-    <script src="../libs/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Script -->
-    <script src="../libs/bootstrap/js/bootstrap.min.js"></script>
-    
-    <!-- Font-awesome Script -->
-    <script src="../libs/font-awesome/js/font-awesome.min.js"></script>
-
-    <!-- angularJS -->
-    <script src="../libs/angular/angular.min.js"></script>
-
-    <!-- Custom Script -->
-    <script src="../dist/js/index_kien.js"></script>
 
 </body>
 </html>
