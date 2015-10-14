@@ -28,7 +28,6 @@
 
     <!-- Bootstrap Script -->
     <script src="../libs/bootstrap/js/bootstrap.js"></script>
-    <script src="../libs/bootstrap/js/bootstrap-3.3.5-dist.js"></script>
 
     <!-- angularJS -->
     <script src="../libs/angular/angular.js"></script>
@@ -40,7 +39,7 @@
 <body ng-app="quizView" ng-controller="viewCtrl">
     <div class="header">
         <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-            <a class="navbar-brand" href="#">User: oc oc oc</a>
+            <a class="navbar-brand" href="#">User: {{username}}</a>
             <!--<ul class="nav navbar-nav">
                 <li class="active">
                     <a href="#">Home</a>
@@ -51,45 +50,66 @@
             </ul>-->
         </nav>
     </div>
-    <div class="container">
-            <h2 class="question-heading">Question 1</h2>
-        <div class="panel">
-            <div class="panel-heading_box">
-                <div class="panel-heading">What does oc cho mean?</div>
-            </div>
-            <div class="panel-body">
-                <div id="choice">
-                    <div class="row">
-                        <form action="">
-                            <input type="checkbox" name="vehicle" value="Bike">    oc cho<br>
-                        </form>
+    <div class="container" ng-init="questionNumber = 1">
+            <h2 class="question-heading">Question {{questionNumber}}</h2>
+        <div class="panel panel-primary" ng-repeat="item in questions">
+            <div class="panel-heading">{{item.question}}</div>
+            
+			<div class="panel-body" id="multiple-choice" ng-show="item.type == 'multipleChoice'">
+				<div class="col-sm-12">
+					<div class="col-sm-6">
+                        <span class="choice">A. {{item.choice[0]}}</span>
                     </div>
-                    <div class="row">
-                        <form action="">
-                            <input type="checkbox" name="vehicle" value="Bike">   oc cho<br>
-                        </form>
-                    </div>
-                    <div class="row">
-                        <form action="">
-                            <input type="checkbox" name="vehicle" value="Bike">   oc cho<br>
-                        </form>
-                    </div>
-                    <div class="row">
-                        <form action="">
-                            <input type="checkbox" name="vehicle" value="Bike">   oc cho<br>
-                        </form>
-                    </div>
-                  <!--  <div class="row">
-                        <input type="checkbox" name="B" id="b" class="form-control" >
-                    </div>
-                    <div class="row">
-                        <input type="checkbox" name="C" id="c" class="form-control">
-                    </div>
-                    <div class="row">
-                        <input type="checkbox" name="D" id="d" class="form-control">
-                    </div>-->
+					<div class="col-sm-6">
+						<span class="choice">B. {{item.choice[1]}}</span>
+					</div>
                 </div>
+				<div class="col-sm-12">
+					<div class="col-sm-6">
+                        <span class="choice">C. {{item.choice[2]}}</span>
+                    </div>
+					<div class="col-sm-6">
+						<span class="choice">D. {{item.choice[3]}}</span>
+					</div>
+                </div> 
+				<div class="col-sm-12">
+					<div class="col-sm-9">
+					</div>
+					<div class="col-sm-3">
+						<input type="submit" name="submit" id="submit" class="form-control btn btn-success" value="Submit">
+					</div>
+				</div>
             </div>
+				
+			<div class="panel-body" id="fill-in" ng-show="item.type == 'fill'">
+				<div class="col-sm-12">
+					<div class="col-sm-9">
+						<input type="text" name="answer" id="answer" placeHolder="Type your answer here">
+					</div>
+					<div class="col-sm-3">
+						<input type="submit" name="submit" id="submit" class="form-control btn btn-success" value="Submit">
+					</div>
+				</div>
+            </div>
+			
+			<div class="panel-body" id="yes-no" ng-show="item.type == 'yesNo'">
+				<div class="col-sm-12">
+					<div class="col-sm-6">
+                        <span class="choice">{{item.choice[0]}}</span>
+                    </div>
+					<div class="col-sm-6">
+						<span class="choice">{{item.choice[1]}}</span>
+					</div>
+                </div>
+				<div class="col-sm-12">
+					<div class="col-sm-9">
+					</div>
+					<div class="col-sm-3">
+						<input type="submit" name="submit" id="submit" class="form-control btn btn-success" value="Submit">
+					</div>
+				</div>
+            </div>
+			
         </div>
     </div>
 </body>
