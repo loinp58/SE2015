@@ -1,0 +1,17 @@
+<%= form_for(@yesnochoice) do |f| %>
+  <% if @yesnochoice.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@yesnochoice.errors.count, "error") %> prohibited this yesnochoice from being saved:</h2>
+
+      <ul>
+      <% @yesnochoice.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

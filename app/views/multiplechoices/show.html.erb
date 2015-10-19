@@ -1,0 +1,63 @@
+<table>
+<tr>
+<th>
+	<p>
+  		<strong>Content:</strong>
+  		<%= @multiplechoice.content %>
+	</p>
+</th>	
+<th>
+	<center>
+		<p>
+  			<strong>Score:</strong>
+  			<%= @multiplechoice.score %>
+		</p>
+	</center>
+</th>
+<th colspan ="4"></th>	
+<tr>
+	<td>
+		<p>
+  			<strong>A:</strong>
+ 			 <%= @multiplechoice.A %>
+		</p>
+	</td>
+	<td>		
+		<p>
+ 		 	<strong>B:</strong>
+  			<%= @multiplechoice.B %>
+		</p>
+	</td>
+</tr>
+<tr>
+	<td>
+		<p>
+ 		 	<strong>C:</strong>
+  		<%= @multiplechoice.C %>
+		</p>
+	</td>
+	<td>	
+		<p>
+ 			 <strong>D:</strong>
+  			<%= @multiplechoice.D %>
+		</p>
+	</td>	
+</tr>
+<tr>
+<td>
+	<center>
+		<p>
+  			<strong>Answer:</strong>
+  			<%= @multiplechoice.Answer %>
+		</p>
+	</center>
+</td>
+<td><%= link_to 'Show', multiplechoice_path(@multiplechoice) %></td>
+<td><%= link_to 'Edit', edit_multiplechoice_path %></td>
+<td><%= link_to 'Back', multiplechoices_path %></td>
+
+
+
+</tr>
+
+</table> 
