@@ -1,27 +1,66 @@
 .container
 {
-    background: #f0f0f0;
+    width: 1300px;
+    height: 1300px;
+    background: #e4b9c0;
 }
 .question-heading
 {
     text-align: center;
-    color: #0000ff;
+    color: red;
 }
 
 .panel
 {
+    height: 600px;
     width: 512px;
     margin: auto;
+}
+
+.panel-heading_box
+{
+    text-align: center;
+    background-color: #ff5252;
+    height: 100px;
+    width: 512px;
 }
 
 .panel-heading
 {
     text-align: center;
     font-size: 25px;
+    color: #fff;
+    height: 176px;
+    width: 512px;
     line-height: 26px;
     font-family: "RobotoDraft";
 }
+.row
+{
+    width: 76px;
+    height: 50px;
+    padding: 14px 0;
 
-#submit {
-	float: right;
+}
+
+#checkbox
+{
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    border: solid 2px #5a5a5a;
+    border-radius: 2px;
+    pointer-events: none;
+    transition: background-color 140ms, border-color 140ms;
+}
+.form-control
+{
+
+    text-align: left;
+}
+
+#choice
+{
+    width: 336px;
+    height: 464px;
 }
