@@ -15,15 +15,3 @@
 <li>W3Schools: http://www.w3schools.com/ Các khái niệm cơ bản nhất về HTML, CSS, JavaScript</li>
 <li>Codecademy: https://www.codecademy.com/ học các ngôn ngữ Web trực tuyến, bao gồm cả client-side(HTML, CSS, JavaScript) và server-side(Ruby on Rails)</li>
 </ul>
-<ul><h3>Các công việc đã được thực hiện</h3>
-<li>Thống nhất lựa chọn chủ đề: Xây dựng lại quiz web cả client-side và server-side</li>
-<li>Thống nhất về các công nghệ sử dụng: HTML, CSS, JavaScript, AngularJS, Bootstrap, Ruby on Rai(server)</li>
-<li>Chia thành viên học các công nghệ mới.</li>
-<li>Tạo được một số trang/đoạn code cần thiết: index, login, admin.</li>
-</ul>
-<ul><h3>Mục tiêu tuần tới</h3>
-<li>Hoàn thành nốt các trang đã tạo</li>
-<li>Tạo thêm trang thông tin người dùng</li>
-<li>Cố gắng bắt đầu chuyển sang phần server</li>
-</ul>
-
