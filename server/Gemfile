@@ -45,3 +45,8 @@ group :development do
   gem 'spring'
 end
 
+gem 'activeadmin', github: 'activeadmin'
+gem 'devise'
+gem 'cancan' # or cancancan
+gem 'draper'
+gem 'pundit'
