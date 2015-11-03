@@ -1,0 +1,102 @@
+﻿https://trello.com/se20151
+Quy trình : Scrum
+
++ Meeting Date: 04/10/2015
+Attendance: Hoàng Trung Kiên, Nguyễn Kim Hưng, Nguyễn Tuấn Anh, Nguyễn Minh Giang, Lợi Nguyễn Phúc 
+
+Decisions made:
+- Chọn project: Web Quiz App
+- Chọn coding environment : + server side : ruby on rails (Hưng, Lợi)
+							+ client side : html/css,javascrips (Tuấn Anh, Kiên, Giang)
+
+---------------------------------------------------------------------------------------------------
+
++ Meeting Date: 11/10/2015
+Attendance: Hoàng Trung Kiên, Nguyễn Kim Hưng, Nguyễn Tuấn Anh, Nguyễn Minh Giang, Lợi Nguyễn Phúc 
+
+Agendas:
+1. Progress of this week.
+- Học ruby on rails.
+- Đã dựng được trang html cơ bản của trang index và trang login
+
+2. Next week.
+- Bắt đầu phát triển server side
+- code trang show question
+- thiết kế lại trang index
+- quản lý dự án trên trello 
+
+3. Free discussion.
+- Ý tưởng về giao diện trang index
+- Chọn ra quy trình -> scrum
+- Chọn scrum master (Lợi), project owner (Hưng)
+
+Decisions made:
+- Tiếp tục nghiên cứu và bắt đầu phát triển server side (Hưng, Lợi)
+- code trang question (Kiên)
+- thiết kế trang index (Giang)
+- dựng leaderboard (Lợi)
+- quản lý dự án theo quy trình scrum trên trello (Tuấn Anh)
+---------------------------------------------------------------------------------------------------
+
++ Meeting Date: 18/10/2015
+Attendance: Hoàng Trung Kiên, Nguyễn Kim Hưng, Nguyễn Tuấn Anh, Nguyễn Minh Giang, Lợi Nguyễn Phúc 
+
+Agendas:
+1. Progress of this week.
+- Thiết kế được trang đăng nhập cho admin
+- Trang question
+- Trang đăng nhập
+- leaderboard
+- xây dựng MVP cho project
+
+2. Next week.
+- Hoàn thiện chức năng trang admin
+- Thiết kế database 
+- Làm chức năng trả lời câu hỏi + tính điểm
+- Tạo trang profile
+- Tạo sprint backlog 0
+
+3. Free discussion.
+- Ý tưởng về các dạng câu hỏi và các cách trả lời câu hỏi.
+
+Decisions made:
+- Làm phần quản lý câu hỏi bên server (Hưng)
+- Làm chức năng trả lời câu hỏi + tính điểm (Kiên, Tuấn Anh)
+- Thiết kế database (Lợi)
+- Tạo trang profile (Giang)
+- Sprint backlog 0 (Tuấn Anh)
+
+---------------------------------------------------------------------------------------------------
+
++ Meeting Date: 25/10/2015
+Attendance: 0
+Tạm nghỉ ôn thi giữa kỳ
+
+---------------------------------------------------------------------------------------------------
++ Meeting Date: 1/11/2015
+Attendance: Hoàng Trung Kiên, Nguyễn Kim Hưng, Nguyễn Tuấn Anh, Nguyễn Minh Giang, Lợi Nguyễn Phúc 
+
+Agendas:
+1. Progress of this week.
+- Dựng xong giao diện trang admin
+- Admin quản lý được list câu hỏi (xem, thêm, xóa, sửa)
+- Thiết kế lại các dạng câu hỏi, câu trả lời
+- Thiết kế lại database
+
+2. Next week.
+- user sign up, log in được
+- Hoàn thiện trang admin, quản lý user
+- bắt đầu thu thập dữ liệu câu hỏi
+- design giao diện trang client
+- sprint backlog 1
+
+3. Free discussion.
+- Nhu cầu nghiên cứu sâu hơn về rails
+
+Decisions made:
+- Đào sâu về rails, nghiên cứu rails API (Hưng)
+- Nghiên cứu JSON (Tuấn Anh)
+- đào sâu về rails, mảng modeling và thiết kế database (Kiên, Lợi)
+- thu thập tổng hợp dữ liệu (tạm thời) cho database, design trang client (Giang)
+- Sprint backlog 1 (Lợi)
+---------------------------------------------------------------------------------------------------
