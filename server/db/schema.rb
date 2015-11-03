@@ -62,18 +62,6 @@ ActiveRecord::Schema.define(version: 20151102133222) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "multiplechoices", force: :cascade do |t|
-    t.text     "content"
-    t.integer  "score"
-    t.text     "A"
-    t.text     "B"
-    t.text     "C"
-    t.text     "D"
-    t.string   "Answer"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "questions", force: :cascade do |t|
     t.text     "description"
     t.integer  "kind"
@@ -86,13 +74,14 @@ ActiveRecord::Schema.define(version: 20151102133222) do
   add_index "questions", ["category_id"], name: "index_questions_on_category_id"
 
   create_table "users", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "yesnochoices", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "name"
+    t.string   "email"
+    t.string   "password"
+    t.string   "description"
+    t.string   "auth_token"
+    t.integer  "point"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 end
