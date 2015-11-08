@@ -28,7 +28,6 @@
 
     <!-- Bootstrap Script -->
     <script src="../libs/bootstrap/js/bootstrap.js"></script>
-    <script src="../libs/bootstrap/js/bootstrap-3.3.5-dist.js"></script>
 
     <!-- angularJS -->
     <script src="../libs/angular/angular.js"></script>
@@ -37,34 +36,8 @@
     <script src="../dist/js/quiz_view.js"></script>
 
 </head>
-<body>
+<body ng-app="quizView" ng-controller="viewCtrl">
 <div class="container">
-    <!--<div id="header" class="clearfix section">
-        <nav id="nav" class="center grid">
-            <p class="text-left alpha">
-                <a href="/">HOME</a>
-            </p>
-
-            <p class="text-left">
-                <a href="/highScore">HIGH SCORE</a>
-            </p>
-
-            <p class="logo mq-wide-i-block mq-mid-i-block mq-small-i-block">
-                <a href="/" title="A&Q">
-                    <img src="dist/img/logo-type@2x.png" alt="Built By">
-                    <img class="logo-img" src="dist/img/logo-plain@2x.png" alt="Buffalo">
-                </a>
-            </p>
-
-            <p class="text-left">
-                <a href="/user">USER</a>
-            </p>
-
-            <p class="text-left omega">
-                <a href="/about">MORE</a>
-            </p>
-        </nav>
-    </div>-->
     <div id="header">
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
@@ -89,68 +62,19 @@
             </div><!-- /.container-fluid -->
         </nav>
     </div>
-    <div id="question">
+    <div id="question" ng-repeat="question in questions">
         <div class="panel panel-info">
-            <div class="panel-heading">Question 1: What is biggest river in the world?</div>
+            <div class="panel-heading">{{question.description}}</div>
             <div class="panel-body">
-                <div id="choice">
+                <div id="choice" ng-repeat="choice in question.answers">
                     <div class="row">
-                        <form action="">
-                            <input type="radio" name="vehicle" value="Bike">    Nile<br>
-                        </form>
-                    </div>
-                    <div class="row">
-                        <form action="">
-                            <input type="radio" name="vehicle" value="Bike">   Amazone<br>
-                        </form>
-                    </div>
-                    <div class="row">
-                        <form action="">
-                            <input type="radio" name="vehicle" value="Bike">   Mekong<br>
-                        </form>
-                    </div>
-                    <div class="row">
-                        <form action="">
-                            <input type="radio" name="vehicle" value="Bike">   Congo<br>
-                        </form>
+                            <input type="radio" name="choice" value="choice">{{choice.value}}<br>
                     </div>
                 </div>
             </div>
         </div>
         <input class="btn btn-success" type="submit" value="Submit">
     </div>
-        <!--<h2 class="question-heading">Question 1</h2>
-        <div class="panel">
-            <div class="panel-heading_box">
-                <div class="panel-heading">What does oc cho mean?</div>
-            </div>
-            <div class="panel-body">
-                <div id="choice">
-                    <div class="row">
-                        <form action="">
-                            <input type="checkbox" name="vehicle" value="Bike">    oc cho<br>
-                        </form>
-                    </div>
-                    <div class="row">
-                        <form action="">
-                            <input type="checkbox" name="vehicle" value="Bike">   oc cho<br>
-                        </form>
-                    </div>
-                    <div class="row">
-                        <form action="">
-                            <input type="checkbox" name="vehicle" value="Bike">   oc cho<br>
-                        </form>
-                    </div>
-                    <div class="row">
-                        <form action="">
-                            <input type="checkbox" name="vehicle" value="Bike">   oc cho<br>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <input class="btn btn-default" type="submit" value="Submit">
-        </div>-->
-
 </div>
 </body>
 </html>
