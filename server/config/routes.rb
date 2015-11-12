@@ -1,13 +1,6 @@
 Rails.application.routes.draw do
-  api_version(:module => "V1", :path => {:value => "v1"}, :default => true) do
-    resources :question
-  end
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-
-  get 'welcome/index'
-  root 'admin/dashboard#index'
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

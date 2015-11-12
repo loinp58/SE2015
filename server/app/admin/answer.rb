@@ -12,8 +12,7 @@ ActiveAdmin.register Answer do
 #   permitted << :other if resource.something?
 #   permitted
 # end
-
-    permit_params :value, :is_correct
-
+    permit_params :choice, :is_correct
+    
     belongs_to :question
 end

@@ -1,7 +1,7 @@
 class CreateAnswers < ActiveRecord::Migration
   def change
     create_table :answers do |t|
-      t.string :value
+      t.string :choice
       t.boolean :is_correct
       t.references :question, index: true, foreign_key: true
 
