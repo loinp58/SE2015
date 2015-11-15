@@ -39,55 +39,65 @@
 </head>
 <body>
 <div class="container">
-    <!--<div id="header" class="clearfix section">
-        <nav id="nav" class="center grid">
-            <p class="text-left alpha">
-                <a href="/">HOME</a>
-            </p>
+    <!--<div id="header">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">TOPEKA QUIZ</a>
+        </div>
 
-            <p class="text-left">
-                <a href="/highScore">HIGH SCORE</a>
-            </p>
-
-            <p class="logo mq-wide-i-block mq-mid-i-block mq-small-i-block">
-                <a href="/" title="A&Q">
-                    <img src="dist/img/logo-type@2x.png" alt="Built By">
-                    <img class="logo-img" src="dist/img/logo-plain@2x.png" alt="Buffalo">
-                </a>
-            </p>
-
-            <p class="text-left">
-                <a href="/user">USER</a>
-            </p>
-
-            <p class="text-left omega">
-                <a href="/about">MORE</a>
-            </p>
-        </nav>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Score: </a></li>
+                <li><a href="#">Username: </a></li>
+            </ul>
+        </div>
     </div>-->
-    <div id="header">
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="/">TOPEKA QUIZ</a>
-                </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Score: </a></li>
-                        <li><a href="#">Username: </a></li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
+    <!--<header id="main_header">
+        <nav id="main_nav" role="navigation">
+            <ul>
+                <li><a href="http://divefishhouse.com" target="_blank" class="dish_trigger"><img src="dist/img/background-word-animal-letters-made-animal-52048169.jpg" alt="Dive Fish House"></a></li>
+                <li class="divider"><img src="dist/img/nav_divider.jpg" alt="Divider"></li>
+
+                <li><a href="http://cutvail.com" target="_blank" class="cut_trigger"><img src="dist/img/download.png" alt="Cut"></a></li>
+                <li class="divider"><img src="dist/img/nav_divider.jpg" alt="Divider"></li>
+
+                <li><a href="http://eatdrinkincdenver.com" target="_blank" class="eat_drink_denver_trigger"><img src="http://eatdrinkinc.com/wp-content/themes/eddiemachado-bones-7ed86d5/library/images/main_nav/eat_drink_denver.jpg" alt="Eat Drink Denver"></a></li>
+                <li class="divider"><img src="http://eatdrinkinc.com/wp-content/themes/eddiemachado-bones-7ed86d5/library/images/nav_divider.jpg" alt="Divider"></li>
+
+                <li><a href="http://tacoricovail.com" target="_blank" class="tacorico_trigger"><img src="http://eatdrinkinc.com/wp-content/themes/eddiemachado-bones-7ed86d5/library/images/main_nav/tacorico.jpg" alt="Tacorico"></a></li>
+                <li class="divider"><img src="http://eatdrinkinc.com/wp-content/themes/eddiemachado-bones-7ed86d5/library/images/nav_divider.jpg" alt="Divider"></li>
+
+                <li><a href="/shop-coming-soon" class="shop_trigger"><img src="http://eatdrinkinc.com/wp-content/themes/eddiemachado-bones-7ed86d5/library/images/main_nav/shop.jpg" alt="Shop"></a></li>
+            </ul>
         </nav>
+    </header>-->
+    <div id="col" class="align_left">
+        <div class="in">
+            <section>
+                <header class="top">
+                    <a href="/" class="k-nav-current" title="Home" data-koken-internal="">
+                        <h1 class="site_title">TOPEKA QUIZ</h1>
+                    </a>
+                </header>
+            </section>
+            <section>
+                <span class="tagline">Fotografie &amp; Mietstudio</span>
+            </section>
+            <nav class="hide_mob">
+                <section id="nav_first"><ul class="k-nav-list k-nav-root "><li><a data-koken-internal="" title="Im Auftrag" >Im Auftrag</a></li></ul></section>
+                <section id="nav_second"><ul class="k-nav-list k-nav-root "><li><a data-koken-internal="" title="Porträts" >Porträts</a></li><li><a data-koken-internal="" title="Privates" href="/albums/privates/">Privates</a></li></ul></section>
+                <section id="nav_third"><ul class="k-nav-list k-nav-root "><li><a target="_blank" title="→ Mietstudios" >→ Mietstudios</a></li><li><a data-koken-internal="" title="Info &amp; Kontakt" href="/pages/info-kontakt/">Info &amp; Kontakt</a></li><li><a data-koken-internal="" title="Impressum" href="/pages/impressum/">Impressum</a></li></ul></section>
+            </nav>
+            <div class="kloading">
+                <div class="spinner_pos active" style="display: none;"><div class="spinner"></div></div>
+            </div>
+        </div>
     </div>
     <div id="question">
         <div class="panel panel-info">
@@ -95,61 +105,18 @@
             <div class="panel-body">
                 <div id="choice">
                     <div class="row">
-                        <form action="">
-                            <input type="radio" name="vehicle" value="Bike">    Nile<br>
-                        </form>
-                    </div>
-                    <div class="row">
-                        <form action="">
-                            <input type="radio" name="vehicle" value="Bike">   Amazone<br>
-                        </form>
-                    </div>
-                    <div class="row">
-                        <form action="">
-                            <input type="radio" name="vehicle" value="Bike">   Mekong<br>
-                        </form>
-                    </div>
-                    <div class="row">
-                        <form action="">
-                            <input type="radio" name="vehicle" value="Bike">   Congo<br>
-                        </form>
+
+                        <input type="radio" name="Choice" value="Choice 1">    Nile<br>
+                        <input type="radio" name="Choice" value="Choice 2">   Amazone<br>
+                        <input type="radio" name="Choice" value="Choice 3">   Mekong<br>
+                        <input type="radio" name="Choice" value="Choice 4">   Congo<br>
+
                     </div>
                 </div>
             </div>
         </div>
         <input class="btn btn-success" type="submit" value="Submit">
     </div>
-        <!--<h2 class="question-heading">Question 1</h2>
-        <div class="panel">
-            <div class="panel-heading_box">
-                <div class="panel-heading">What does oc cho mean?</div>
-            </div>
-            <div class="panel-body">
-                <div id="choice">
-                    <div class="row">
-                        <form action="">
-                            <input type="checkbox" name="vehicle" value="Bike">    oc cho<br>
-                        </form>
-                    </div>
-                    <div class="row">
-                        <form action="">
-                            <input type="checkbox" name="vehicle" value="Bike">   oc cho<br>
-                        </form>
-                    </div>
-                    <div class="row">
-                        <form action="">
-                            <input type="checkbox" name="vehicle" value="Bike">   oc cho<br>
-                        </form>
-                    </div>
-                    <div class="row">
-                        <form action="">
-                            <input type="checkbox" name="vehicle" value="Bike">   oc cho<br>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <input class="btn btn-default" type="submit" value="Submit">
-        </div>-->
 
 </div>
 </body>

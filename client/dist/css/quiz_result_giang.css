@@ -1,0 +1,44 @@
+#result
+{
+    width: 777px;
+    align-content: center;
+    margin: auto;
+    font-size: 30px;
+}
+
+#review
+{
+    width: 777px;
+    height: 50px;
+    bottom: 0;
+    right: 286px;
+    position: fixed;
+}
+
+#button
+{
+    height: 100px;
+}
+
+.ava
+{
+    width: 150px;
+    height: 50px;
+    float: left;
+}
+
+.title
+{
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.pro
+{
+    float: left;
+    width: 350px;
+    height: 50px;
+}
+
+
