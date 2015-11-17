@@ -1,0 +1,64 @@
+{
+	"name" : "Science",
+	"questions": [
+		{
+			"id": 1,
+			"kind": 1,
+			"description": "1 + 1 = ?",
+			"score": 10,
+			"answers": [
+				{
+					"id": "1",
+					"choice": "1",
+					"is_correct": false
+				},
+				{
+					"id": "2",
+					"choice": "2",
+					"is_correct": true
+				},
+				{
+					"id": "3",
+					"choice": "5",
+					"is_correct": false
+				},
+				{
+					"id": "1",
+					"choice": "3",
+					"is_correct": false
+				}
+			]
+		},
+		{
+			"id": 2,
+			"kind": 2,
+			"description": "1 + 1 = 2?",
+			"score": 10,
+			"answers": [
+				{
+					"id": 1,
+					"choice": "TRUE",
+					"is_correct": true
+				},
+				{
+					"id": 2,
+					"choice": "FALSE",
+					"is_correct": false
+				}
+			]
+		},
+		{
+			"id": 3,
+			"kind": 3,
+			"description": "What magic is that?",
+			"score": 20,
+			"answers": [
+				{
+					"id": 1,
+					"choice": "LOL",
+					"is_correct": true
+				}
+			]
+		}
+	]
+}
