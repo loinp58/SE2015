@@ -1,0 +1,23 @@
+<section class="quiz-view" ng-controller="QuizCtrl">
+	<header class="header">
+		<span class="question number">Question {{currentPosition + 1}}</span>
+		<p>Timer clock (available soon)</p>
+		<span class="score">Score: {{currentQuestion.score}}</span>
+	</header>
+	<section class="content">
+		<div class="question">{{currentQuestion.description}}</div>
+		<div class="options">
+			<label class="option" ng-repeat="option in currentQuestion.options">
+				<span class="inner">
+					<input type="radio" value="{{option.choice}}" ng-model="$parent.currentResponse">
+					<span>{{option.choice}}</span>
+				</span>
+			</label>
+		</div>
+	</section>
+	<footer class="footer">
+		<a class="quit" ng-click="quit()">Quit</a>
+		<button ng-disabled="!isAnswered()" ng-click="submitAnswer()">Next</button>
+		<a class="pass" ng-click="next()">Pass</a>
+	</footer>
+</section>
