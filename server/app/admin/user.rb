@@ -12,16 +12,17 @@ ActiveAdmin.register User do
 #   permitted << :other if resource.something?
 #   permitted
 # end
-    permit_params :name, :email, :point, :description
-    
-    index do
-        selectable_column
-        id_column
-        column :name
-        column :email
-        column :point
-        column :description
-        actions
-    end
+  permit_params :access_token
+  
+  #permit_params :name, :highscore, :description
 
+  index do
+    selectable_column
+    id_column
+    column :name
+    column :highscore
+    column :description
+    column :created_at
+    actions
+  end
 end

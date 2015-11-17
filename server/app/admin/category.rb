@@ -13,12 +13,11 @@ ActiveAdmin.register Category do
 #   permitted
 # end
     permit_params :name
-
     sidebar "Category Details", only: [:show, :edit] do
-        link_to "Questions", admin_category_questions_path(category)
-    end
+    link_to "Questions", admin_category_questions_path(category)
+end
 
-    index do
+    index do 
         selectable_column
         id_column
         column :name

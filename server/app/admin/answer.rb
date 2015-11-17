@@ -12,8 +12,15 @@ ActiveAdmin.register Answer do
 #   permitted << :other if resource.something?
 #   permitted
 # end
-
-    permit_params :value, :is_correct
-
+    permit_params :choice, :is_correct
+    
     belongs_to :question
+    
+    index do
+        selectable_column
+        id_column
+        column :choice
+        column :is_correct
+        actions
+    end
 end
