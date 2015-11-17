@@ -1,13 +1,14 @@
 ﻿https://trello.com/se20151
-Quy trình : Scrum
+
 
 + Meeting Date: 04/10/2015
 Attendance: Hoàng Trung Kiên, Nguyễn Kim Hưng, Nguyễn Tuấn Anh, Nguyễn Minh Giang, Lợi Nguyễn Phúc 
 
 Decisions made:
 - Chọn project: Web Quiz App
-- Chọn coding environment : + server side : ruby on rails (Hưng, Lợi)
-							+ client side : html/css,javascrips (Tuấn Anh, Kiên, Giang)
+- Chọn coding environment : 
+	+ server side : ruby on rails (Hưng, Lợi)
+	+ client side : html/css,javascrips (Tuấn Anh, Kiên, Giang)
 
 ---------------------------------------------------------------------------------------------------
 
@@ -99,4 +100,53 @@ Decisions made:
 - đào sâu về rails, mảng modeling và thiết kế database (Kiên, Lợi)
 - thu thập tổng hợp dữ liệu (tạm thời) cho database, design trang client (Giang)
 - Sprint backlog 1 (Lợi)
+---------------------------------------------------------------------------------------------------
+
++ Meeting Date: 8/11/2015
+Attendance: Hoàng Trung Kiên, Nguyễn Kim Hưng, Nguyễn Tuấn Anh, Nguyễn Minh Giang, Lợi Nguyễn Phúc 
+
+Agendas:
+1. Progress of this week.
+- server trả về API (json form)
+- user sign up, log in được
+- dựng các trang client side (dưới dạng các template) (đang tiến hành)
+
+2. Next week.
+- hoàn thành khung client :giao diện + nhận json từ server + thực hiện các chức năng trả lời câu hỏi 
+- sprint backlog 2.
+
+3. Free discussion.
+
+Decisions made:
+- Team server : nghiên cứu sign up/ sign in qua fb, google...
+- Team client : hoàn thành khung client
+- Sprint backlog 2 (Lợi)
+---------------------------------------------------------------------------------------------------
+
++ Meeting Date: 15/11/2015
+Attendance: Hoàng Trung Kiên, Nguyễn Kim Hưng, Nguyễn Tuấn Anh, Nguyễn Minh Giang, Lợi Nguyễn Phúc 
+
+Agendas:
+1. Progress of this week.
+- Dựng xong client.
+- Deploy hoàn chỉnh trên heroku
+
+2. Next week.
+- admin quản lý user -> làm leaderboard
+- tăng cường giao diện
+- làm test
+- sprint backlog 3
+
+3. Free discussion.
+- Những gì web còn thiếu
+- Các chủ đề (chủ đề rộng hay hẹp ?)
+- Hướng phát triển thêm (các quiz đặc biệt, các chức năng đặc biệt như thách đấu ....)
+
+Decisions made:
+- Tiếp tục thêm css cho trang web, tăng cường giao diện
+- Nghiên cứu chức năng login bằng fb, google...
+- Làm leaderboard
+- Bắt đầu học viết test cho sản phẩm
+- Nghiên cứu thêm ý tưởng phát triển về chức năng của web
+- Sprint backlog 3 (Lợi)
 ---------------------------------------------------------------------------------------------------
