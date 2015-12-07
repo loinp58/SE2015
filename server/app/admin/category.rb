@@ -21,6 +21,7 @@ end
         selectable_column
         id_column
         column :name
+        column :urlImage
         column :updated_at
         column "Questions" do |category|
             link_to "Questions", admin_category_questions_path(category)
