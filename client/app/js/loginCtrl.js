@@ -1,6 +1,6 @@
 quizApp.controller("LoginCtrl", function($scope, $location) {
 	$scope.isValidUser = function() {
-	return true;
+		return true;
 	}
 	
 	$scope.currentTab = 1;
@@ -13,18 +13,14 @@ quizApp.controller("LoginCtrl", function($scope, $location) {
 	
 	$scope.getCurrentLoginStatus = function() {
 		return $scope.loginStatus;
-	}
+	};
 	
 	$scope.changeLoginStatus = function() {
 		$scope.loginStatus = (($scope.loginStatus == false) ? true : false);
 		return $scope.loginStatus;
-	}
-	
-	$scope.chooseCategory = function() {
-		$location.path('/categories');
-	}
-	
-	$scope.help = function () {
-		$location.path('/help');
-	}
+	};
+
+	$scope.backtoHome = function() {
+		$location.path('/');
+	};
 });

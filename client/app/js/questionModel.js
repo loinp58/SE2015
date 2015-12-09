@@ -7,6 +7,11 @@ quizApp.factory('questionModel', function(){
 			question.score = data.score;
 			question.kind = data.kind;
 			question.id = data.id;
+			
+			question.isFillIn = function() {
+				return (question.kind == 3);
+			}
+			
 			return question;
 		}
 	};

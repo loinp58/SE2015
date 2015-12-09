@@ -32,7 +32,7 @@
                                             <label for="remember">Remember me</label>
                                         </div>
                                         <div class="col-sm-8">
-                                                <input type="submit" name="submit" id="submit" class="form-control btn btn-login" value="Log In" ng-disabled="!isValidUser()" ng-click="chooseCategory()">
+                                                <input type="submit" name="submit" id="submit" class="form-control btn btn-login" value="Log In" ng-disabled="!isValidUser()" ng-click="backtoHome()">
                                         </div>
                                     </div>
                                 </div>
@@ -50,7 +50,7 @@
                                     <span class="span-or">or</span>
                                 </div><!--End login or-->
                                 <div class="col-lg-4">
-                                    <a class="btn btn-block btn-social btn-facebook">
+                                    <a class="btn btn-block btn-social btn-facebook" ng-controller="FacebookController" ng-click="fbLogin()">
                                         <i class="fa fa-facebook"></i> Facebook
                                     </a>
                                 </div>
@@ -96,7 +96,4 @@
             </div>
         </div>
     </div>
-	<div class="help">
-		<button ng-click="help()">Help</button>
-	</div>
 </section>

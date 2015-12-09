@@ -2,24 +2,33 @@
 <html ng-app="quizApp">
 	<head>
 		<title>QUIZ APP</title>
-		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
 		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="bower_components/bootstrap-social/bootstrap-social.css">
+		<link rel="stylesheet" href="app.css">
 		
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script src="bower_components/angular/angular.js"></script>
 		<script src="bower_components/angular-route/angular-route.js"></script>
 		<script src="bower_components/angular-resource/angular-resource.js"></script>
-		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 		
 		<script src="app.js"></script>
+		<script src="js/Auth/FacebookController.js"></script>
+		<script src="js/userModel.js"></script>
 		<script src="js/quizModel.js"></script>
 		<script src="js/questionModel.js"></script>
+		<script src="js/categoriesModel.js"></script>
+		<script src="js/categoryModel.js"></script>
+		<script src="js/homeCtrl.js"></script>
 		<script src="js/loginCtrl.js"></script>
+		<script src="js/userProfileCtrl.js"></script>
 		<script src="js/helpCtrl.js"></script>
 		<script src="js/categoriesCtrl.js"></script>
 		<script src="js/quizCtrl.js"></script>
 		<script src="js/resultCtrl.js"></script>
 	</head>
-	<body ng-view>
+	<body class="quiz-body" ng-view>
 	</body>
 </html>

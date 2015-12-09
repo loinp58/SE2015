@@ -1,0 +1,38 @@
+<section class="user-profile" ng-controller="userProfileCtrl">
+	<div class="logo"></div>
+	<div class="container">
+		<div class="row">
+			<div class="panel panel-default panel-transparent">
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-xs-12 col-sm-8">
+							<h2>{{userName}}</h2>
+							<small><cite title="San Francisco, USA"><i class="glyphicon glyphicon-map-marker"></i> San Francisco, USA </cite>
+							</small>                    
+							<div class="col-xs-12 col-sm-4 user-rank">
+								<img class ="user-rank" src="http://vignette4.wikia.nocookie.net/leagueoflegends/images/b/b4/BronzeBadgeSeason2.png/revision/latest?cb=20130928162132"></img><br/>	
+								<span class="points">0 LP</span>                   
+							</div>
+							<i class="glyphicon glyphicon-envelope"></i> email@example.com<br/>
+							<i class="glyphicon glyphicon-gift"></i> June 02, 1988</p>
+							<p><strong>About: </strong> Web Designer / UI. </p>
+							<p><strong>Hobbies: </strong> Read, out with friends, listen to music, draw and learn new things. </p>
+							<p><strong>Achivements: </strong>
+								<span class="label label-info tags">The TopLaner</span> 
+								<span class="label label-info tags">The Typicalman</span>
+								<span class="label label-info tags">Hardcore Gamer</span>
+							</p>
+						</div>          
+						<div class="col-xs-12 col-sm-4 text-center user-img">
+							<img src="{{userPicture.data.url}}" alt="" class="center-block img-circle img-responsive">
+						</div>
+						<div class="row button-back">
+							<button type="button" ng-click="back()" class="btn btn-default btn-block"><span class="fa fa-gear"></span> Back </button>  
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

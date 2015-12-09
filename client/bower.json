@@ -10,10 +10,13 @@
     "angular-route": "~1.4.0",
     "angular-loader": "~1.4.0",
     "angular-mocks": "~1.4.0",
-	"angular-resource": "~1.5.0",
+    "angular-resource": "~1.5.0",
     "html5-boilerplate": "~5.2.0",
-	"jquery": "~2.1.4",
-	"bootstrap": "~3.3.5",
-	"font-awesome": "~4.4.0"
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.4.0",
+    "bootstrap-social": "~4.11.0"
+  },
+  "resolutions": {
+    "angular": "1.5.0-build.4428+sha.1dd206e"
   }
 }

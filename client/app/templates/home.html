@@ -1,0 +1,23 @@
+<section class="home-view" ng-controller="HomeCtrl">
+	<div class="logo"></div>
+	<div class="login-section">
+		<div class="col-lg-6" ng-hide="logined">
+			<a class="btn btn-block btn-social btn-facebook" ng-controller="FacebookController" ng-click="fbLogin()">
+				<i class="fa fa-facebook"></i> Login with Facebook
+			</a>
+		</div>
+		<div ng-show="logined">
+			<span class="profile">
+				<img src="{{userPicture.data.url}}" alt="picture"></img>
+				<label class="username">Welcome, {{userName}}</label>
+			</span>
+		</div>
+	</div>
+	<div class="slogan"><h3>Let's xàm le and LOL</h3></div>
+	<div class="button-bar">
+		<button ng-click="chooseCategory()">Start</button>
+		<!-- <button ng-click="seeProfile()">Profile</button> -->
+		<!-- <button>Leaderboard</button> -->
+		<button ng-click="help()">Help</button>
+	</div>
+</section>

@@ -1,0 +1,209 @@
+.quiz-body{
+    background-image: url("http://4.bp.blogspot.com/-cFrX94jbehk/UQgQyh66j3I/AAAAAAAAAk4/qFaJ1jjlMV8/s1600/9b516f4441a7bfb5174b33ebf74fc1d6_49102622.freebackgrounds5.jpg");
+	/*background-image: url('img/background.jpg');*/
+    /*background-color: black;*/
+    background-size: 105%;
+    font-family: arial, helvetica, sans serif;
+    margin: 0px;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+}
+
+.quiz-body *{
+    -webkit-transition-property: color,background;
+    -webkit-transition-duration: .2s;
+    -moz-transition-property: color,background;
+    -moz-transition-duration: .2s;
+}
+
+.login-section {
+    position: absolute;
+    top: 0px;
+    right: -100px;
+    width: 500px;
+    padding-top: 10px;
+}
+
+.quiz-body .home-view, .user-profile, .categories, .result-view, .quiz-view {
+    text-align: center;
+}
+
+.quiz-body .logo {
+    background-image: url('img/logo.png');
+    width: 400px;
+    height: 110px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin-top: 3%;
+}
+
+.quiz-body .home-view .slogan {
+    display: block;
+    margin-top: 2%;
+}
+
+.quiz-body .button-bar {
+    width: 350px;
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.quiz-body .button-bar button:last-child{
+    margin-bottom: 30px;
+}
+
+.quiz-body button, #field {
+	cursor: pointer;
+}
+
+.quiz-body button {
+    height: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30px;
+    width: 200px;
+	margin-top: 5px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    border: 3px solid #555;
+    font-size: 25px;
+	color: black;
+
+    background-color: white;
+
+    text-transform: capitalize;
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .2s;
+}
+
+.quiz-body button:hover {
+    background: transparent;
+	color: white;
+}
+
+.quiz-body button:active {
+    background: transparent;
+	color: white;
+}
+
+.quiz-body .categories .container {
+	margin: 2% 50px 30px 65px;
+}
+
+.quiz-body .categories .container .link {
+	margin : 4px;
+}
+
+.quiz-body .user-profile .container {
+	text-align: left;
+	margin-top: 2%;
+}
+
+.quiz-body .user-profile .container .panel-transparent {
+	background: none;
+}
+
+.quiz-body .user-profile .user-rank {
+	text-align: center;
+	font-size: 30px;
+}
+
+.quiz-body .user-profile .user-img {
+	width: 250px;
+	height: 250px;
+}
+
+.quiz-body .result-view {
+    text-align: center;
+}
+
+.quiz-body .result-view .result-container header {
+    color: #a32a13;
+    font-size: 36px;
+}
+
+.quiz-body .result-view .result-container .result-content {
+    width: 500px;
+    height: 225px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+    background: black;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, .5);
+    padding: 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-size: 32px;
+    font-family: cursive;
+    border-radius: 2px;
+}
+
+.quiz-body .result-view .button-bar{
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.quiz-body .help-view {
+    text-align: center;
+}
+
+.quiz-body .help-view ul{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 600px;
+    line-height: 2;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: verdana;
+    list-style: square;
+}
+
+.quiz-body .quiz-view  {
+	padding-top: 100px;
+}
+
+.quiz-body .quiz-view .panel {
+	boder: 10px;
+}
+
+.quiz-body .quiz-view .question {
+	color: #000;
+	margin-top: -5px;
+}
+
+.quiz-body .quiz-view .options {
+	color: blue;
+}
+
+.quiz-body .quiz-view .options  #typeFill{
+	color: blue;
+	font-weight: bold;
+}
+
+.quiz-body .quiz-view .panel-footer :hover{
+	background: transparent;
+	color: blue;
+}
+
+.quiz-body .categories img {
+	height: 200px;
+	width: 100%;
+	border: 5px solid white;
+	transition: 1s;
+}
+
+.quiz-body .categories img:hover {
+	width: 90%;
+}
+
+.title {
+    font-size: 50px;
+}
+

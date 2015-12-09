@@ -1,23 +1,31 @@
 <section class="quiz-view" ng-controller="QuizCtrl">
-	<header class="header">
-		<span class="question number">Question {{currentPosition + 1}}</span>
-		<p>Timer clock (available soon)</p>
-		<span class="score">Score: {{currentQuestion.score}}</span>
-	</header>
-	<section class="content">
-		<div class="question">{{currentQuestion.description}}</div>
-		<div class="options">
-			<label class="option" ng-repeat="option in currentQuestion.options">
-				<span class="inner">
-					<input type="radio" value="{{option.choice}}" ng-model="$parent.currentResponse">
-					<span>{{option.choice}}</span>
-				</span>
-			</label>
+	<div class="col-md-6 col-md-offset-3">
+		<div class="panel panel-primary">
+			<header class="panel-heading">
+				<h3 class="">Question {{currentPosition + 1}}</h3>
+				<h3 class="">Point: {{currentQuestion.score}}</h3>
+			</header>
+			<section class="panel-body">
+				<h3 class="question">{{currentQuestion.description}}</h3>
+				<div class="options">
+					<div ng-hide="currentQuestion.isFillIn()" ng-repeat="option in currentQuestion.options">
+						<div class="radio">
+							<label>
+								<input type="radio" value="{{option.choice}}" ng-model="$parent.currentResponse">
+								{{option.choice}}
+							</label>
+						</div>
+					</div>
+					<div id="typeFill" ng-show="currentQuestion.isFillIn()">
+						<input type="text" placeholder="Type your answer here" aria-describedby="sizing-addon1" ng-model="currentResponse">
+					</div>
+				</div>
+			</section>
+			<footer class="panel-footer">
+				<button class="quit" ng-click="quit()">Quit</button>
+				<button ng-disabled="!isAnswered()" ng-click="submitAnswer()">Next</button>
+				<button class="pass" ng-click="next()">Pass</button>
+			</footer>
 		</div>
-	</section>
-	<footer class="footer">
-		<a class="quit" ng-click="quit()">Quit</a>
-		<button ng-disabled="!isAnswered()" ng-click="submitAnswer()">Next</button>
-		<a class="pass" ng-click="next()">Pass</a>
-	</footer>
+	</div>
 </section>
